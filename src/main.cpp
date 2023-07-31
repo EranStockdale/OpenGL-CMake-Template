@@ -12,7 +12,7 @@ void processInput(GLFWwindow *window) { // input handler
 }
 
 int main(int, char**){
-    std::cout << "Hello, from MathGL!\n";
+    std::cout << "Hello, from OpenGL!\n";
 
     glfwInit();
     // Make GLFW requires OpenGL version 3.3+
@@ -22,7 +22,7 @@ int main(int, char**){
     //glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 
     // initialize the window
-    GLFWwindow* window = glfwCreateWindow(800, 600, "MathGL", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(800, 600, "OpenGL Template", NULL, NULL);
     if (window == NULL) {
         std::cout << "Failed to create GLFW window" << std::endl;
         glfwTerminate();
